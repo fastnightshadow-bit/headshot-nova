@@ -121,12 +121,18 @@ nav a:hover { color: var(--rose); }
 .petals.paused .petal, .petals.paused .petal i { animation-play-state: paused; }
 .section { padding: 100px 7%; max-width: 1600px; margin: auto; }
 .section h2 { font: 500 clamp(42px, 5vw, 70px)/1.1 'Barlow Condensed', sans-serif; text-transform: uppercase; letter-spacing: .02em; margin: 0 0 40px; }
-.portraits { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-.photo { height: 340px; background: #17191f url(family.png) no-repeat; background-size: auto 440px; border-radius: 4px; }
-.photo:nth-child(1) { background-position: 16% 20%; }
-.photo:nth-child(2) { background-position: 41% 20%; }
-.photo:nth-child(3) { background-position: 64% 20%; }
-.photo:nth-child(4) { background-position: 88% 20%; }
+.leadership { display: grid; grid-template-columns: .9fr 1.5fr; gap: 7%; margin-bottom: 68px; }
+.leader { padding: 38px 32px; background: radial-gradient(ellipse at 0 0, #4b243755, transparent 85%), #151319; border-radius: 8px; align-self: start; }
+.leader h3 { margin: 0 0 20px; font-size: 18px; font-weight: 500; color: var(--rose); }
+.leader p { margin: 0; font: italic 500 clamp(34px, 4vw, 54px)/1.1 'Cormorant Garamond', Georgia, serif; overflow-wrap: anywhere; }
+.roster-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 54px 7%; }
+.role-group { min-width: 0; }
+.role-group h3 { display: flex; align-items: baseline; gap: 16px; margin: 0 0 20px; font-size: 23px; font-weight: 500; color: #e7c0cf; }
+.role-group h3 span { color: #82717b; font-size: 15px; font-variant-numeric: tabular-nums; }
+.member-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 22px; }
+.member-list li { padding: 10px 0; font-size: 14px; color: #d7d1d7; overflow-wrap: anywhere; transition: color .25s ease; }
+.member-list li:hover { color: #f3b8cf; }
+.friends .member-list li { color: #a8a2ad; }
 .chronicle { padding-top: 45px; }
 .story-photo { padding: 0; background: none; display: block; width: 100%; overflow: hidden; border-radius: 5px; }
 .story-photo img { width: 100%; display: block; transition: transform .6s ease; }
@@ -159,8 +165,12 @@ dialog button { display: block; margin: 0 0 10px auto; background: transparent; 
   .petal:nth-child(n+13) { display: none; }
   .section { padding: 65px 6%; }
   .section h2 { margin-bottom: 28px; }
-  .portraits { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  .photo { height: 245px; background-size: auto 350px; }
+  .leadership { grid-template-columns: 1fr; gap: 32px; margin-bottom: 44px; }
+  .leader { padding: 28px; }
+  .roster-columns { grid-template-columns: 1fr; gap: 38px; }
+  .role-group h3 { font-size: 22px; margin-bottom: 12px; }
+  .member-list { gap: 0 16px; }
+  .member-list li { font-size: 13px; }
   .join { grid-template-columns: 1fr; gap: 24px; }
   .join h2 { font-size: 56px; }
 }
