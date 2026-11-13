@@ -4,6 +4,7 @@
   --paper: #eeeae7;
   --rose: #df8da7;
   --accent: #902b49;
+  --display-font: 'Barlow Condensed', sans-serif;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 105px; }
@@ -31,8 +32,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--rose); outline-
 .site-header.is-hidden { transform: translateY(-110%); }
 .site-header:focus-within { transform: translateY(0); }
 .logo {
-  font: italic 600 38px/1.2 'Cormorant Garamond', Georgia, serif;
-  letter-spacing: -.04em;
+  font: 500 38px/1.2 var(--display-font);
+  letter-spacing: .02em;
+  text-transform: uppercase;
   color: var(--rose);
   transition: color .4s ease, text-shadow .4s ease;
 }
@@ -73,10 +75,10 @@ nav a:hover { color: var(--rose); }
 }
 .hero-content { position: relative; z-index: 2; }
 .hero h1 {
-  font: italic 500 clamp(100px, 12vw, 190px)/.95 'Cormorant Garamond', Georgia, serif;
-  letter-spacing: -.055em;
+  font: 500 clamp(84px, 12vw, 190px)/.95 var(--display-font);
+  letter-spacing: .02em;
+  text-transform: uppercase;
   margin: 0 0 24px;
-  padding-right: .07em;
   color: #f5e9ed;
   transition: color .65s ease, text-shadow .65s ease, transform .65s ease;
 }
@@ -120,7 +122,7 @@ nav a:hover { color: var(--rose); }
 }
 .petals.paused .petal, .petals.paused .petal i { animation-play-state: paused; }
 .section { padding: 100px 7%; max-width: 1600px; margin: auto; }
-.section h2 { font: 500 clamp(42px, 5vw, 70px)/1.1 'Barlow Condensed', sans-serif; text-transform: uppercase; letter-spacing: .02em; margin: 0 0 40px; }
+.section h2 { font: 500 clamp(42px, 5vw, 70px)/1.1 var(--display-font); text-transform: uppercase; letter-spacing: .02em; margin: 0 0 40px; }
 .leadership { display: grid; grid-template-columns: .9fr 1.5fr; gap: 7%; margin-bottom: 68px; }
 .leader { padding: 38px 32px; background: radial-gradient(ellipse at 0 0, #4b243755, transparent 85%), #151319; border-radius: 8px; align-self: start; }
 .leader h3 { margin: 0 0 20px; font-size: 18px; font-weight: 500; color: var(--rose); }
@@ -158,9 +160,9 @@ dialog button { display: block; margin: 0 0 10px auto; background: transparent; 
   .site-header { padding: 17px 5%; gap: 15px; }
   .site-header .quiet-button { display: none; }
   nav { gap: 18px; font-size: 12px; }
-  .logo { font-size: 32px; }
+  .logo { font-size: clamp(22px, 6vw, 30px); }
   .hero { min-height: 650px; max-height: 850px; background-position: 50% 30%; padding-bottom: 90px; }
-  .hero h1 { font-size: clamp(90px, 23vw, 140px); }
+  .hero h1 { font-size: clamp(48px, 17vw, 110px); }
   .hero-subtitle { font-size: 10px; }
   .petal:nth-child(n+13) { display: none; }
   .section { padding: 65px 6%; }
