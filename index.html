@@ -1,42 +1,74 @@
 <!doctype html>
 <html lang="ru">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>HEADSHOT — семья на NOVA</title><meta name="description" content="HEADSHOT. Семья GTA V RP на NOVA. Состав, хроника и вступление.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{color-scheme:dark;--ink:#0c0d10;--paper:#eeeae7;--muted:#999ba5;--accent:#8f2946}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--ink);color:var(--paper);font:15px/1.6 Manrope,Arial,sans-serif}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}button,a,input,textarea{outline-offset:6px}button{cursor:pointer}header{position:absolute;z-index:3;inset:0 0 auto;display:flex;align-items:center;justify-content:space-between;padding:25px 5%;gap:24px}.logo{font:italic 700 28px 'Barlow Condensed',sans-serif;letter-spacing:-1px;color:#bd4868}nav{display:flex;gap:40px;font-size:13px}nav a:hover{color:#e685a0}.outline,.button{display:inline-flex;align-items:center;justify-content:center;gap:36px;padding:14px 25px;border:1px solid #ffffff50;border-radius:4px;background:transparent;color:var(--paper);font-size:13px;font-weight:600}.button{background:var(--accent);border-color:var(--accent)}.button:hover{background:#a73555}.outline:hover{border-color:#fff}.hero{height:100svh;min-height:660px;max-height:1100px;position:relative;display:flex;align-items:flex-end;justify-content:center;text-align:center;padding:0 20px 8vh;background:linear-gradient(0deg,#0c0d10 0%,transparent 45%),url(family.png) center 35%/cover}.hero h1{font:500 clamp(70px,10vw,160px)/1 'Barlow Condensed',Impact,sans-serif;letter-spacing:.17em;margin:0 0 18px;padding-left:.17em}.eyebrow{font-size:11px;letter-spacing:.36em;text-transform:uppercase;color:#c6c6cf}.hero .eyebrow{margin-bottom:28px}.hero .button{min-width:240px}.scroll{position:absolute;bottom:30px;right:5%;color:#a8a9b1;font-size:11px}.section{padding:100px 7%;max-width:1600px;margin:auto}.section-head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:38px}.section h2{font:500 clamp(42px,5vw,70px)/1.1 'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.02em;margin:10px 0}.section p{color:var(--muted);max-width:490px}.portraits{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.portrait{margin:0}.portrait .photo{height:340px;background-image:url(family.png);background-size:auto 440px;background-repeat:no-repeat;border-radius:3px;background-color:#17191f}.portrait:nth-child(1) .photo{background-position:16% 20%}.portrait:nth-child(2) .photo{background-position:41% 20%}.portrait:nth-child(3) .photo{background-position:64% 20%}.portrait:nth-child(4) .photo{background-position:88% 20%}figcaption{padding:16px 0;color:#a2a3ab;font-size:12px}.note{font-size:12px;color:#81838e}.chronicle{border-top:1px solid #24262d;border-bottom:1px solid #24262d}.story{display:grid;grid-template-columns:1.45fr 1fr;gap:50px;align-items:center}.story button{padding:0;background:none;border:0;display:block;overflow:hidden;border-radius:4px}.story img{width:100%;display:block;transition:transform .5s}.story button:hover img{transform:scale(1.025)}.story h3{font:500 38px 'Barlow Condensed';margin:0}.tag{display:block;font-size:10px;letter-spacing:.18em;color:#c06c84;margin-bottom:20px}.join{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:start}.join h2{font-size:clamp(55px,6vw,90px)}form{display:grid;gap:18px}label{display:grid;gap:7px;font-size:12px;color:#c8c8cd}input,textarea{width:100%;background:#14161b;border:1px solid #33353f;border-radius:4px;padding:13px;color:#eee}textarea{resize:vertical;min-height:110px}input:focus,textarea:focus{border-color:#b94567}form .button{justify-self:start}#status{font-size:12px;min-height:20px;margin:0}#result{width:100%;min-height:170px}footer{border-top:1px solid #24262d;margin:0 7%;padding:30px 0;display:flex;align-items:center;justify-content:space-between;color:#888a95;font-size:11px}dialog{padding:15px;background:#111;border:1px solid #454550;max-width:95vw;border-radius:8px}dialog::backdrop{background:#000c}dialog img{display:block;max-width:85vw;max-height:80vh}dialog button{display:block;margin:0 0 10px auto;background:transparent;border:0;color:white;padding:8px}
-@media(max-width:700px){header{padding:20px 5%;gap:15px}header .outline{display:none}nav{gap:17px;font-size:11px}.logo{font-size:24px}.hero{min-height:650px;max-height:850px;background-position:50% 30%;padding-bottom:90px}.hero h1{font-size:65px;letter-spacing:.08em}.hero .eyebrow{font-size:10px}.section{padding:65px 6%}.section-head{display:block}.section-head p{font-size:13px}.portraits{grid-template-columns:repeat(2,1fr);gap:12px}.portrait .photo{height:245px;background-size:auto 350px}.story,.join{grid-template-columns:1fr;gap:28px}.join{gap:30px}.scroll{display:none}footer{gap:20px}.note{line-height:1.5}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
-</style></head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HeadShot — семья на NOVA</title>
+  <meta name="description" content="HeadShot — семья GTA V RP на NOVA. Состав, хроника и вступление.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
 <body>
-<header><a class="logo" href="#" aria-label="HEADSHOT — главная">HEADSHOT</a><nav aria-label="Основное меню"><a href="#family">Состав</a><a href="#chronicle">Хроника</a><a href="#join">Набор</a></nav><a href="#join" class="outline">Вступить в семью ↗</a></header>
-<main>
-<section class="hero" aria-label="HEADSHOT на NOVA"><div><h1>HEADSHOT</h1><div class="eyebrow">GTA V RP · NOVA</div><a class="button" href="#family">Смотреть состав <span>→</span></a></div><a class="scroll" href="#family">Листай вниз ↓</a></section>
-<section class="section" id="family"><div class="section-head"><div><span class="eyebrow">Наша семья</span><h2>За именем — люди.</h2></div><p>HEADSHOT на NOVA.<br>Здесь начинается знакомство с нашей семьёй.</p></div><div class="portraits"><figure class="portrait"><div class="photo" role="img" aria-label="Персонаж в чёрном худи"></div><figcaption>Портрет участника · демо</figcaption></figure><figure class="portrait"><div class="photo" role="img" aria-label="Персонаж в бордовой куртке"></div><figcaption>Портрет участника · демо</figcaption></figure><figure class="portrait"><div class="photo" role="img" aria-label="Персонаж в кепке"></div><figcaption>Портрет участника · демо</figcaption></figure><figure class="portrait"><div class="photo" role="img" aria-label="Персонаж в чёрной куртке"></div><figcaption>Портрет участника · демо</figcaption></figure></div><p class="note">Пока здесь иллюстративные персонажи. Имена и роли появятся вместе с настоящим составом.</p></section>
-<section class="section chronicle" id="chronicle"><div class="section-head"><div><span class="eyebrow">Хроника</span><h2>В кадре — HEADSHOT.</h2></div></div><div class="story"><button id="open-photo" aria-label="Открыть изображение семьи"><img src="family.png" alt="Четыре персонажа на фоне вечернего Лос-Сантоса" loading="lazy"></button><div><span class="tag">ВИЗУАЛЬНЫЙ КОНЦЕПТ</span><h3>Вечер в Лос-Сантосе</h3><p>Первый кадр нашей истории. Здесь соберём скриншоты и видео из жизни семьи.</p><p class="note">Сгенерированное изображение для оформления сайта.</p></div></div></section>
-<section class="section join" id="join"><div><span class="eyebrow">Стать частью семьи</span><h2>Твой следующий<br>выход — с нами.</h2><p>Расскажи о своём персонаже и опыте на NOVA.</p><p class="note">Анкета подготовит текст заявки. Скопируй его и передай представителю семьи. Контакт для отправки пока не добавлен.</p></div><form id="application"><label>Ник персонажа<input name="nickname" autocomplete="off" maxlength="80" required placeholder="Имя и фамилия"></label><label>Discord<input name="discord" autocomplete="off" maxlength="80" required placeholder="Твой username"></label><label>О себе<textarea name="about" maxlength="1500" required placeholder="Как давно играешь и почему хочешь в HEADSHOT?"></textarea></label><button class="button" type="submit">Подготовить заявку <span>↗</span></button><div id="output" hidden><label>Текст заявки<textarea id="result" readonly></textarea></label><button class="outline" type="button" id="copy">Скопировать</button></div><p id="status" role="status" aria-live="polite"></p></form></section>
-</main><footer><a class="logo" href="#">HEADSHOT</a><span>GTA V RP · NOVA</span><a href="#">Наверх ↑</a></footer>
-<dialog id="photo"><button id="close-photo" aria-label="Закрыть изображение">Закрыть ×</button><img src="family.png" alt="Портрет семьи HEADSHOT"></dialog>
-<script>
-const photo = document.querySelector('#photo');
-document.querySelector('#open-photo').addEventListener('click', () => photo.showModal());
-document.querySelector('#close-photo').addEventListener('click', () => photo.close());
-photo.addEventListener('click', event => { if (event.target === photo) photo.close(); });
-const form = document.querySelector('#application');
-const result = document.querySelector('#result');
-const status = document.querySelector('#status');
-form.addEventListener('submit', event => {
-  event.preventDefault();
-  const data = new FormData(form);
-  const fields = ['nickname', 'discord', 'about'].map(key => data.get(key).trim());
-  if (fields.some(value => !value)) { status.textContent = 'Заполни все поля текстом.'; return; }
-  result.value = ['Заявка в HEADSHOT · NOVA', 'Ник персонажа: ' + fields[0], 'Discord: ' + fields[1], 'О себе: ' + fields[2]].join('\n\n');
-  document.querySelector('#output').hidden = false;
-  status.textContent = 'Заявка подготовлена. Теперь её можно скопировать.';
-});
-document.querySelector('#copy').addEventListener('click', async () => {
-  try { await navigator.clipboard.writeText(result.value); status.textContent = 'Текст заявки скопирован.'; }
-  catch { result.focus(); result.select(); status.textContent = 'Выделил текст. Нажми Ctrl+C или удерживай выделение на телефоне.'; }
-});
-</script></body></html>
+  <header class="site-header">
+    <a class="logo" href="#" aria-label="HeadShot — главная">HeadShot</a>
+    <nav aria-label="Основное меню">
+      <a href="#family">Состав</a>
+      <a href="#chronicle">Хроника</a>
+      <a href="#join">Набор</a>
+    </nav>
+    <a href="#join" class="quiet-button">Вступить в семью ↗</a>
+  </header>
+  <main>
+    <section class="hero" aria-label="HeadShot на NOVA">
+      <div class="petals" aria-hidden="true"></div>
+      <div class="hero-content">
+        <h1>HeadShot</h1>
+        <p class="hero-subtitle">GTA V RP · NOVA</p>
+        <a class="button" href="#family">Смотреть состав <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+    <section class="section" id="family">
+      <h2>За именем — люди</h2>
+      <div class="portraits">
+        <div class="photo" role="img" aria-label="Персонаж в чёрном худи"></div>
+        <div class="photo" role="img" aria-label="Персонаж в бордовой куртке"></div>
+        <div class="photo" role="img" aria-label="Персонаж в кепке"></div>
+        <div class="photo" role="img" aria-label="Персонаж в чёрной куртке"></div>
+      </div>
+    </section>
+    <section class="section chronicle" id="chronicle">
+      <h2>В кадре — HeadShot</h2>
+      <button class="story-photo" id="open-photo" aria-label="Открыть изображение семьи">
+        <img src="family.png" alt="Четыре персонажа на фоне вечернего Лос-Сантоса" loading="lazy">
+      </button>
+    </section>
+    <section class="section join" id="join">
+      <h2>Твой следующий<br>выход — с нами</h2>
+      <form id="application">
+        <label>Ник персонажа
+          <input name="nickname" autocomplete="off" maxlength="80" required>
+        </label>
+        <label>Discord
+          <input name="discord" autocomplete="off" maxlength="80" required>
+        </label>
+        <label>О себе
+          <textarea name="about" maxlength="1500" required></textarea>
+        </label>
+        <button class="button" type="submit">Подготовить заявку <span aria-hidden="true">↗</span></button>
+        <div id="output" hidden>
+          <label>Текст заявки<textarea id="result" readonly></textarea></label>
+          <button class="quiet-button" type="button" id="copy">Скопировать</button>
+        </div>
+        <p id="status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer><a class="logo" href="#">HeadShot</a><a href="#" aria-label="Вернуться наверх">Наверх ↑</a></footer>
+  <dialog id="photo">
+    <button id="close-photo" aria-label="Закрыть изображение">Закрыть ×</button>
+    <img src="family.png" alt="Портрет семьи HeadShot">
+  </dialog>
+</body>
+</html>
